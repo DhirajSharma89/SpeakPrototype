@@ -1,0 +1,74 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "easycall-dysarthria",
+  "dataset_size": 1036792351,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/changelinglab/easycall-dysarthria@88b0ace21e3c2700140c136743f73441d9e7e194/data/test-00000-of-00001.parquet": {
+      "num_bytes": 135504807,
+      "checksum": null
+    },
+    "hf://datasets/changelinglab/easycall-dysarthria@88b0ace21e3c2700140c136743f73441d9e7e194/data/train-00000-of-00002.parquet": {
+      "num_bytes": 295284473,
+      "checksum": null
+    },
+    "hf://datasets/changelinglab/easycall-dysarthria@88b0ace21e3c2700140c136743f73441d9e7e194/data/train-00001-of-00002.parquet": {
+      "num_bytes": 228124808,
+      "checksum": null
+    },
+    "hf://datasets/changelinglab/easycall-dysarthria@88b0ace21e3c2700140c136743f73441d9e7e194/data/validation-00000-of-00001.parquet": {
+      "num_bytes": 147818978,
+      "checksum": null
+    }
+  },
+  "download_size": 806733066,
+  "features": {
+    "audio": {
+      "sampling_rate": 16000,
+      "_type": "Audio"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1843525417,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 227937929,
+      "num_examples": 5213,
+      "dataset_name": "easycall-dysarthria"
+    },
+    "train": {
+      "name": "train",
+      "num_bytes": 623788091,
+      "num_examples": 11901,
+      "shard_lengths": [
+        10706,
+        1195
+      ],
+      "dataset_name": "easycall-dysarthria"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 185066331,
+      "num_examples": 4272,
+      "dataset_name": "easycall-dysarthria"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
