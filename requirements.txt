@@ -1,18 +1,23 @@
-transformers==5.3.0
-accelerate==1.13.0
-datasets==2.18.0
+# Requirements for SpeakPrototype
+transformers==4.44.2
+accelerate==0.34.2
+datasets==2.21.0
+peft==0.13.0  # <--- Upgrade to this version to handle 'corda_config'
 
+# Speech Processing
 openai-whisper
+librosa
+soundfile
 
-numpy
+# Data & Math
+numpy<2.0.0
 scipy
 pandas
 scikit-learn
 
-librosa
-soundfile
-
+# Text & NLP
 sentence-transformers
 rapidfuzz
 
+# Frontend
 streamlit
