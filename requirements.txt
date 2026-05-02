@@ -1,23 +1,39 @@
-# Requirements for SpeakPrototype
-transformers==4.44.2
-accelerate==0.34.2
-datasets==2.21.0
-peft==0.13.0  # <--- Upgrade to this version to handle 'corda_config'
+# ---------------- Core Deep Learning ----------------
+torch==2.5.0
+torchaudio==2.5.0
+torchvision==0.20.0
 
-# Speech Processing
-openai-whisper
-librosa
-soundfile
+# ---------------- HuggingFace / LoRA ----------------
+transformers==5.3.0
+tokenizers==0.22.2
+accelerate==1.13.0
+datasets==2.18.0
+peft==0.18.1
+safetensors==0.7.0
+huggingface-hub==1.6.0
 
-# Data & Math
-numpy<2.0.0
-scipy
-pandas
-scikit-learn
+# ---------------- Whisper / Audio ----------------
+openai-whisper==20250625
+librosa==0.10.2.post1
+soundfile==0.12.1
+soxr==1.0.0
+audioread==3.1.0
+jiwer==4.0.0
 
-# Text & NLP
-sentence-transformers
-rapidfuzz
+# ---------------- Data / ML ----------------
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.3
 
-# Frontend
-streamlit
+# ---------------- NLP / Embeddings ----------------
+sentence-transformers==5.3.0
+rapidfuzz==3.14.3
+
+# ---------------- App UI ----------------
+streamlit==1.38.0
+
+# ---------------- Utilities ----------------
+tqdm==4.67.3
+requests==2.32.5
